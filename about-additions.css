@@ -1,0 +1,728 @@
+
+:root {
+  --about-purple: #b89aff;
+  --about-pink: #ffc0e6;
+  --about-blue: #91bdff;
+  --about-ink: #f7f2ff;
+  --about-muted: #c2bad3;
+  --about-border: rgba(197, 177, 250, .23);
+  --about-surface: #191527;
+}
+
+
+.case-nav__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  padding-block: 24px 20px;
+}
+
+.listing-card-info .meta {
+  margin: 18px 0 8px;
+
+  color: var(--accent2);
+
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+
+  text-transform: uppercase;
+}
+
+.case-brand {
+  display: block;
+  text-align: center;
+  font: 400 32px/1 'Playfair Display', Georgia, serif;
+  letter-spacing: -.07em;
+}
+
+.case-brand span {
+  color: var(--about-purple);
+}
+
+.case-brand small {
+  display: block;
+  margin-top: 6px;
+  color: var(--about-ink);
+  font: 700 9px/1.5 'DM Sans', Arial, sans-serif;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+}
+
+.case-nav__links {
+  justify-content: center;
+  gap: 18px 28px;
+}
+
+.case-nav__links a[aria-current="page"],
+.case-nav__links a:hover {
+  color: var(--about-pink);
+}
+
+
+.about-extra-section {
+  padding-block: 90px;
+  border-top: 1px solid var(--about-border);
+}
+
+.about-extra-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 45px;
+  margin-bottom: 36px;
+}
+
+.about-extra-heading > div {
+  min-width: 0;
+}
+
+.about-extra-kicker {
+  margin: 0 0 12px;
+  color: var(--about-blue);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .17em;
+  text-transform: uppercase;
+}
+
+.about-extra-heading h2,
+.about-end h2 {
+  margin: 0;
+  font: 400 clamp(36px, 5vw, 66px)/1.15
+    'Playfair Display', Georgia, serif;
+  letter-spacing: -.055em;
+}
+
+.about-extra-heading h2 em,
+.about-end h2 em {
+  color: var(--about-pink);
+  font-weight: 400;
+}
+
+.about-extra-heading > p {
+  max-width: 340px;
+  margin: 0;
+  color: var(--about-muted);
+  font-size: 14px;
+}
+
+
+.about-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.about-skill-card {
+  padding: 29px 25px;
+  border: 1px solid var(--about-border);
+  border-radius: 18px;
+  background: linear-gradient(
+    145deg,
+    #20192f,
+    #14121f
+  );
+}
+
+.about-skill-icon {
+  display: block;
+  margin-bottom: 18px;
+  color: var(--about-pink);
+  font-size: 32px;
+}
+
+.about-skill-card h3 {
+  margin: 0 0 16px;
+  color: var(--about-ink);
+  font: 400 24px/1.2
+    'Playfair Display', Georgia, serif;
+}
+
+.about-skill-card ul {
+  margin: 0;
+  padding-left: 19px;
+  color: var(--about-muted);
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.about-skill-card li::marker {
+  color: var(--about-purple);
+}
+
+
+.about-experience-list {
+  display: grid;
+  gap: 12px;
+}
+
+.about-experience-item {
+  display: grid;
+  grid-template-columns: 68px minmax(0, 1fr) auto;
+  gap: 20px;
+  align-items: center;
+  padding: 24px;
+  border: 1px solid var(--about-border);
+  border-radius: 16px;
+  background: #171321;
+}
+
+.about-experience-mark {
+  display: grid;
+  place-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  background: linear-gradient(
+    145deg,
+    #544084,
+    #282244
+  );
+  color: var(--about-pink);
+  font-size: 25px;
+}
+
+.about-experience-item:nth-child(2) .about-experience-mark {
+  background: linear-gradient(
+    135deg,
+    #543152,
+    #362246
+  );
+}
+
+.about-experience-item:nth-child(3) .about-experience-mark {
+  background: linear-gradient(
+    135deg,
+    #304b79,
+    #2c2252
+  );
+}
+
+.about-experience-item h3 {
+  margin: 0 0 3px;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.about-experience-item p {
+  margin: 0;
+  color: var(--about-ink);
+  font-size: 13px;
+}
+
+.about-experience-item small {
+  display: block;
+  margin-top: 8px;
+  color: var(--about-muted);
+  line-height: 1.6;
+}
+
+.about-experience-item time {
+  color: var(--about-blue);
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.about-inline-link {
+  display: inline-block;
+  margin-top: 25px;
+  color: var(--about-pink);
+  text-underline-offset: 5px;
+}
+
+.about-inline-link:hover {
+  text-decoration: underline;
+}
+
+
+.about-life-band {
+  padding: 95px 0;
+  border-block: 1px solid var(--about-border);
+  background:
+    radial-gradient(
+      ellipse at 78% 22%,
+      rgba(119, 87, 207, .24),
+      transparent 48%
+    ),
+    #14101f;
+}
+
+.about-life-intro {
+  max-width: 920px;
+  margin: 0 0 35px;
+  color: var(--about-ink);
+  font-size: clamp(19px, 2.2vw, 27px);
+  line-height: 1.6;
+}
+
+.about-interests-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.about-interest-card {
+  padding: 27px;
+  border: 1px solid var(--about-border);
+  border-radius: 16px;
+  background: rgba(33, 27, 54, .75);
+}
+
+.about-interest-card > span {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--about-pink);
+  font-size: 37px;
+}
+
+.about-interest-card h3 {
+  margin: 0 0 8px;
+  color: var(--about-ink);
+  font: 400 23px
+    'Playfair Display', Georgia, serif;
+}
+
+.about-interest-card p {
+  margin: 0;
+  color: var(--about-muted);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+
+.about-favorites-subheading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 44px 0 20px;
+  font: 400 clamp(23px, 3vw, 34px)
+    'Playfair Display', Georgia, serif;
+}
+
+.about-favorites-subheading span {
+  color: var(--about-blue);
+  font: 700 11px/1.6
+    'DM Sans', Arial, sans-serif;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+
+.about-film-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.about-film-card {
+  min-width: 0;
+}
+
+.about-film-art {
+  display: flex;
+  min-height: 255px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  border: 1px solid var(--about-border);
+  border-radius: 13px;
+  color: white;
+}
+
+.about-film-art span {
+  opacity: .65;
+  font-size: 12px;
+  letter-spacing: .15em;
+}
+
+.about-film-art b {
+  font: italic 400 clamp(22px, 2.7vw, 35px)/1.16
+    'Playfair Display', Georgia, serif;
+}
+
+.film-one {
+  background: linear-gradient(
+    145deg,
+    #62419c,
+    #19132d
+  );
+}
+
+.film-two {
+  background: linear-gradient(
+    145deg,
+    #3c6a95,
+    #22153d
+  );
+}
+
+.film-three {
+  background: linear-gradient(
+    145deg,
+    #a0528b,
+    #30192f
+  );
+}
+
+.film-four {
+  background: linear-gradient(
+    145deg,
+    #493e87,
+    #19172e
+  );
+}
+
+.about-film-card > p {
+  margin: 9px 0 0;
+  color: var(--about-muted);
+  font-size: 12px;
+}
+
+
+.about-music-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.about-track {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 15px;
+  border: 1px solid var(--about-border);
+  border-radius: 13px;
+  background: #191527;
+}
+
+.about-track-num {
+  color: var(--about-blue);
+  font-size: 13px;
+}
+
+.about-track strong {
+  display: block;
+  font-size: 13px;
+}
+
+.about-track small {
+  display: block;
+  margin-top: 4px;
+  color: var(--about-muted);
+  font-size: 11px;
+}
+
+.about-track > span:last-child {
+  color: var(--about-pink);
+  font-size: 22px;
+}
+
+
+.about-end {
+  padding-block: 92px 110px;
+  text-align: center;
+}
+
+.about-end h2 {
+  max-width: 850px;
+  margin-inline: auto;
+}
+
+.about-end > p:not(.about-extra-kicker) {
+  margin: 20px auto 26px;
+  color: var(--about-muted);
+}
+
+.about-contact-button {
+  display: inline-block;
+  padding: 13px 22px;
+  border: 1px solid var(--about-pink);
+  border-radius: 7px;
+  background: var(--about-pink);
+  color: #1b1127;
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.about-contact-button:hover {
+  background: #f7dcff;
+}
+
+
+@media (max-width: 920px) {
+
+  .about-skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .about-skill-card:last-child {
+    grid-column: 1/-1;
+  }
+
+  .about-film-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .about-music-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .about-extra-section {
+    padding-block: 65px;
+  }
+
+  .about-extra-heading {
+    display: block;
+  }
+
+  .about-extra-heading > p {
+    margin-top: 18px;
+  }
+
+  .about-skills-grid,
+  .about-interests-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-skill-card:last-child {
+    grid-column: auto;
+  }
+
+  .about-experience-item {
+    grid-template-columns: 48px minmax(0, 1fr);
+    gap: 14px;
+    padding: 17px;
+  }
+
+  .about-experience-mark {
+    width: 48px;
+    height: 48px;
+  }
+
+  .about-experience-item time {
+    grid-column: 2;
+  }
+
+  .about-life-band {
+    padding-block: 70px;
+  }
+
+  .about-film-grid {
+    gap: 10px;
+  }
+
+  .about-film-art {
+    min-height: 200px;
+    padding: 13px;
+  }
+
+  .about-favorites-subheading {
+    flex-wrap: wrap;
+  }
+
+  .about-end {
+    padding-block: 65px;
+  }
+
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+
+  .about-contact-button {
+    transition: none;
+  }
+
+}
+
+
+/* ==========================================
+   FAVOURITE FILMS — POSTER GALLERY
+========================================== */
+
+/* Gallery Layout */
+
+.about-film-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+/* Remove Card Styling */
+
+.about-film-card {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  min-width: 0;
+}
+
+/* Actual Film Posters */
+
+.about-film-photo {
+  display: block;
+
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 3;
+
+  object-fit: cover;
+  object-position: center;
+
+  border: none;
+  border-radius: 12px;
+
+  background: transparent;
+  box-shadow: none;
+
+  transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+
+.about-film-card:hover .about-film-photo {
+  transform: translateY(-5px);
+}
+
+/* Film Titles */
+
+.about-film-card figcaption {
+  margin-top: 12px;
+  padding: 0;
+
+  color: #c2bad3;
+  font-size: 13px;
+  text-align: center;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .about-film-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 480px) {
+  .about-film-grid {
+    gap: 12px;
+  }
+
+  .about-film-photo {
+    border-radius: 8px;
+  }
+}
+
+/* Reduced Motion */
+
+@media (prefers-reduced-motion: reduce) {
+  .about-film-photo {
+    transition: none;
+  }
+
+  .about-film-card:hover .about-film-photo {
+    transform: none;
+  }
+}
+
+
+/* ==========================================
+   MUSIC — ALBUM COVER THUMBNAILS
+========================================== */
+
+/* Music Card Layout */
+
+.about-track {
+  display: grid;
+  grid-template-columns: 65px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 16px;
+
+  min-width: 0;
+  padding: 15px;
+
+  border: 1px solid rgba(197, 177, 250, 0.23);
+  border-radius: 16px;
+
+  background: #191527;
+}
+
+/* Album Cover Image */
+
+.about-track-cover {
+  display: block;
+
+  width: 65px;
+  height: 65px;
+
+  border-radius: 9px;
+  object-fit: cover;
+
+  flex-shrink: 0;
+}
+
+/* Song Information */
+
+.about-track-info {
+  min-width: 0;
+}
+
+.about-track-info strong {
+  display: block;
+
+  color: #f7f2ff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.about-track-info small {
+  display: block;
+
+  margin-top: 5px;
+
+  color: #c2bad3;
+  font-size: 12px;
+}
+
+/* Music Note Icon */
+
+.about-track-icon {
+  color: #ffc0e6;
+  font-size: 22px;
+}
+
+/* Mobile */
+
+@media (max-width: 650px) {
+  .about-track {
+    grid-template-columns: 52px minmax(0, 1fr) auto;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .about-track-cover {
+    width: 52px;
+    height: 52px;
+  }
+
+  .about-track-info strong {
+    font-size: 13px;
+  }
+}
